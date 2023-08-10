@@ -5,7 +5,7 @@ import {
   ApolloProvider,
 } from '@apollo/client';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
-import ExampleComponent from './pages/ExampleComponent';
+import Home from './pages/Home';
 
 const client = new ApolloClient({
   uri: '/graphql',
@@ -22,7 +22,7 @@ function App() {
             <Routes>
               <Route 
                 path="/"
-                element={<ExampleComponent />}
+                element={<Home />}
               />
             </Routes>
           </div>
