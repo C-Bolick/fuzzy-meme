@@ -7,10 +7,19 @@ const resolvers = {
   Query: {
     users: async () => {
       return await User.find({}).populate('username').populate({
-        path: 'User'
+        path: 'User',
         populate: ''
       })
-      
+    },
+
+    Users: asyn () => {
+      return Users.find();
+    },
+    
+    User: async(parent, {name}) => {
+      return User.findOneAndUpdate(
+        {_id: userId},
+      )
     },
   },
 
@@ -22,7 +31,8 @@ const resolvers = {
     },
     
 
-  },
-};
+    };
+  };
+
 
 module.exports = resolvers;
