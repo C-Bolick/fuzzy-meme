@@ -7,7 +7,8 @@ const resolvers = {
   Query: {
     users: async () => {
       return await User.find({}).populate('username').populate({
-        path: ''
+        path: 'User'
+        populate: ''
       })
       
     },
