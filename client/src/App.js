@@ -22,7 +22,7 @@ function App() {
             <Routes>
               <Route 
                 path="/"
-                element={<ExampleComponent />}
+                element={<Home />}
               />
             </Routes>
           </div>
