@@ -11,13 +11,13 @@ type User {
 
   
   type Query {
-    users: [User]
+    users: [User]!
+    user(userId: ID!): Users
 
   }
 
   type Mutation {
     addUser(username: String!, email: String!, password: String!): User
-    
   }
 `;
 
