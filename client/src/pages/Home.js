@@ -7,7 +7,7 @@ const Home = () => {
     <main>
       <Header />
       <div className="flex-row justify-center">
-       <h1>Hello MERN Stack Template</h1>
+       <h1>Is this the Krusty Krab?</h1>
       </div>
     </main>
   );

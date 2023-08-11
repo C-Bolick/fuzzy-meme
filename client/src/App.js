@@ -23,10 +23,10 @@ function App() {
         <div className="flex-column justify-flex-start min-100-vh">
           <div className="container">
             <Routes>
-              <Route 
-                path="/"
-                element={<Home />}
-              />
+              <Route path="/"element={<Home />} />
+              <Route path="/menu" element={<Menu />} />
+              <Route path="/cart" element={<Cart />} />
+              <Route path="/contact" element={<Contact />} />
             </Routes>
           </div>
         </div>
