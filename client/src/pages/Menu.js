@@ -1,18 +1,17 @@
 import React from 'react';
 import Header from '../components/Header';
 
-const Home = () => {
-  
-  return (
-    <main>
+const Menu = () => {
+
+    return (
+        <main>
       <Header />
       <div className="flex-row justify-center">
-       <h1>Hello MERN Stack Template</h1>
+       <h1>Hello Meun</h1>
       </div>
     </main>
-  );
+
+    );
 };
 
-export default Home;
-
-
+export default Menu;
