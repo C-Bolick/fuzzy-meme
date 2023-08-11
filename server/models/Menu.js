@@ -1,5 +1,6 @@
 const { Model, DataTypes } = require('sequelize');
 const sequelize = require('../config/connection');
+const Entree = require('./Entree');
 
 class Menu extends Model { }
 
@@ -27,3 +28,7 @@ Menu.init(
         modelName: 'menu',
     }
 );
+
+Menu.hasMany(Entree, { foreignKey: 'menu_id' });
+
+module.exports = Menu;

@@ -12,7 +12,7 @@ type User {
   
   type Query {
     users: [User]!
-    user(userId: ID!): Users
+    user(userId: ID!): User
 
   }
 
