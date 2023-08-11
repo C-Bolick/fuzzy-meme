@@ -12,8 +12,8 @@ const resolvers = {
       })
     },
 
-    Users: async () => {
-      return Users.find();
+    User: async () => {
+      return User.find();
     },
     
     User: async(parent, {name}) => {
