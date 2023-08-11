@@ -10,7 +10,9 @@ const Menu = () => {
   if (loading) return <p>Loading...</p>;
   if (error) return <p>Error: {error.message}</p>;
 
+
   const menuItems = data.menuItems; // Adjust this based on the structure of your query response
+
 
   return (
       <main>
