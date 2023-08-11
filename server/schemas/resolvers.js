@@ -12,7 +12,7 @@ const resolvers = {
       })
     },
 
-    Users: asyn () => {
+    Users: async () => {
       return Users.find();
     },
     

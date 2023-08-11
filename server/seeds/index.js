@@ -1,5 +1,5 @@
 const sequelize = require('../config/connection');
-const seedMeal = require('./entreeData');
+const seedEntree = require('./entreeData');
 const seedMenu = require('./menuData.js');
 
 const seedAll = async () => {
@@ -7,7 +7,7 @@ const seedAll = async () => {
 
   await seedMenu();
 
-  await seedMeal();
+  await seedEntree();
 
   process.exit(0);
 };
