@@ -8,6 +8,7 @@ const Menu = () => {
       <Header />
       <div className="flex-row justify-center">
        <h1>Menu</h1>
+       
       </div>
     </main>
 
