@@ -7,7 +7,7 @@ const Menu = () => {
         <main>
       <Header />
       <div className="flex-row justify-center">
-       <h1>Hello Meun</h1>
+       <h1>Menu</h1>
       </div>
     </main>
 
