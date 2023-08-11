@@ -6,6 +6,9 @@ import {
 } from '@apollo/client';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Home from './pages/Home';
+import Cart from './pages/Cart';
+import Menu from './pages/Menu';
+import Contact from './pages/Contact';
 
 const client = new ApolloClient({
   uri: '/graphql',
@@ -20,10 +23,10 @@ function App() {
         <div className="flex-column justify-flex-start min-100-vh">
           <div className="container">
             <Routes>
-              <Route 
-                path="/"
-                element={<Home />}
-              />
+              <Route path="/"element={<Home />} />
+              <Route path="/menu" element={<Menu />} />
+              <Route path="/cart" element={<Cart />} />
+              <Route path="/contact" element={<Contact />} />
             </Routes>
           </div>
         </div>
