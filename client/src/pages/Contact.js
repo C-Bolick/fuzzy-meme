@@ -7,7 +7,7 @@ const Contact = () => {
         <main>
       <Header />
       <div className="flex-row justify-center">
-       <h1>Hello Meun</h1>
+       <h1>Hello Contact</h1>
       </div>
     </main>
 
