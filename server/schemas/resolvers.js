@@ -13,9 +13,7 @@ const resolvers = {
     //   })
     // },
 
-    // Users: async () => {
-    //   return Users.find();
-    // },
+
     
     // User: async(parent, {userId}) => {
     //   return Profile.findOneAndUpdate(

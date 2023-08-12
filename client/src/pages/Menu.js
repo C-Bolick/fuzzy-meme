@@ -5,11 +5,12 @@ import { QUERY_MENU } from '../utils/queries'; // Import your GraphQL query
 
 
 const Menu = () => {
+
   const { loading, error, data } = useQuery(QUERY_MENU);
+
 
   if (loading) return <p>Loading...</p>;
   if (error) return <p>Error: {error.message}</p>;
-
 
   const menuItems = data?.menu; // Adjust this based on the structure of your query response
 

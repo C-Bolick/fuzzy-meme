@@ -1,5 +1,6 @@
 import React from 'react';
 import Header from '../components/Header';
+import ContactForm from '../components/ContactForm';
 
 const Contact = () => {
 
@@ -7,8 +8,11 @@ const Contact = () => {
         <main>
       <Header />
       <div className="flex-row justify-center">
-       <h1>Hello Contact</h1>
-      </div>
+      <div>
+    <h1>Contact Us</h1>
+    <ContactForm />
+    </div>
+  </div>
     </main>
 
     );
