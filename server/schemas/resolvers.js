@@ -12,24 +12,20 @@ const resolvers = {
     //     populate: ''
     //   })
     // },
-
-
-
-
     // User: async(parent, {userId}) => {
     //   return Profile.findOneAndUpdate(
     //     {_id: userId},
     //   )
     // },
-    me: async(parent, args, context) => {
-      if(context.user) {
-        const user = await User.findOne({_id: context.user._id})
+    me: async (parent, args, context) => {
+      if (context.user) {
+        const user = await User.findOne({ _id: context.user._id })
         return user
       }
       throw new AuthenticationError("You must be logged in!")
     },
-    menu: async ( ) => {
-      const menu = await Menu.find( )
+    menu: async () => {
+      const menu = await Menu.find()
       return menu
     }
   },
@@ -40,8 +36,8 @@ const resolvers = {
     addUser: async (parent, args) => {
       const user = await User.create(args);
       const token = signToken(user);
-  
-      return { token, user };  
+
+      return { token, user };
     },
     login: async (parent, { email, password }) => {
       const user = await User.findOne({ email });
@@ -62,8 +58,8 @@ const resolvers = {
 
       return { token, user };
     }
-    }
-  };
+  }
+};
 
 
 module.exports = resolvers;

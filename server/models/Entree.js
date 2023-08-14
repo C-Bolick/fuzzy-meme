@@ -49,26 +49,26 @@ const { Schema, model } = require('mongoose');
 const entreeSchema = new Schema(
   {
     name: {
-        type: String,
-        allowNull: false,
+      type: String,
+      allowNull: false,
     },
     menu_id: {
-        type: Number,
-        references: {
-            model: 'menu',
-            key: 'id',
-        }
+      type: Number,
+      references: {
+        model: 'menu',
+        key: 'id',
+      }
     },
     filename: {
-        type: String,
-        allowNull: false,
+      type: String,
+      allowNull: false,
     },
     description: {
-        type: String,
+      type: String,
     },
     price: {
-        type: Number,
-        allowNull: false,
+      type: Number,
+      allowNull: false,
     },
   },
   {

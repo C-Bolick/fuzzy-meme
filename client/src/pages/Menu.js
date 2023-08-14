@@ -7,6 +7,7 @@ import { QUERY_MENU } from '../utils/queries'; // Import your GraphQL query
 const Menu = () => {
 
 
+
   const { loading, error, data } = useQuery(QUERY_MENU);
 
 
