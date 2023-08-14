@@ -15,9 +15,7 @@ const Header = ({ page }) => {
         <div className="header-photo">
         </div>
         )}
-        <div className="navbar-brand">
-          <h1>Golden Spatula</h1>
-        </div>
+        <div className="navbar-name">Golden Spatula</div>
         <ul className="navbar-nav ml-auto"> 
           {page !== 'welcome' && ( // Only show Home button if not on the Home page
             <li className="nav-item">
