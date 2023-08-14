@@ -1,20 +1,16 @@
-import React from 'react';
-import Header from '../components/Header';
-import Footer from '../components/Footer';
+import React from "react";
+import ProductList from "../components/ProductList";
+import CategoryMenu from "../components/CategoryMenu";
+import Cart from "../components/Cart";
 
 const Home = () => {
-  
   return (
-    <main>
-      <Header />
-      <div className="flex-row justify-center">
-       <h1>Is this the Krusty Krab?</h1>
-      </div>
-      <Footer />
-    </main>
+    <div className="container">
+      <CategoryMenu />
+      <ProductList />
+      <Cart />
+    </div>
   );
 };
 
 export default Home;
-
-
