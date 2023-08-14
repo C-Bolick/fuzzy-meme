@@ -1,13 +1,11 @@
+<<<<<<< HEAD
 const Menu = require('./Menu');
 const Entree = require('./Entree');
-const Users = require('/Users');
+=======
+const User = require('./User');
+const Product = require('./Product');
+const Category = require('./Category');
+const Order = require('./Order');
+>>>>>>> e23e0a3a752b0050c8c7c6c2ba0a4d93f4ef72a3
 
-// Menu.hasMany(Entree, {
-//   foreignKey: 'menu_id',
-// });
-
-// Entree.belongsTo(Menu, {
-//   foreignKey: 'menu_id',
-// });
-
-module.exports = { Menu, Entree, Users };
+module.exports = { User, Product, Category, Order };
