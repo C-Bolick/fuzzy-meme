@@ -8,13 +8,13 @@ const Cart = () => {
       <Header />
       <div className="flex-row justify-center">
         <h1>Cart</h1>
-        <table class="table is-bordered is-striped is-hoverable is-fullwidth" id="invoice-table">
+        <table>
           <tr>
             <th>Entree:</th>
             <th>Unit Price:</th>
           </tr>
         </table>
-        <div id="total-price">Total: </div>
+        <div>Total: </div>
       </div>
     </main>
 
