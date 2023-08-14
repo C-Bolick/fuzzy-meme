@@ -1,7 +1,9 @@
-const { Model, DataTypes } = require('sequelize');
-const sequelize = require('../config/connection');
+
+
+
 
 const { Schema, model } = require('mongoose');
+
 
 const menuSchema = new Schema(
   {
@@ -21,4 +23,10 @@ const menuSchema = new Schema(
     },
     id: false,
   }
+
 );
+
+const Menu = model('menu', menuSchema);
+
+module.exports = Menu;
+
